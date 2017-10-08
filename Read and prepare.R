@@ -45,6 +45,7 @@ data_C$X <- NULL
 #test2 <- data.frame(matrix(unlist(test1), nrow=191, byrow=T),stringsAsFactors=FALSE)
 #test <- as.data.frame(do.call(rbind, strsplit(test, split = "")))
 
-# сохраняем то, что получилось
+# сохраняем то, что получилось в папку реопзитория git
+setwd("~/Рабочий стол/R data/Connectivity Project/Connectivity") 
 data_O <- write.csv2(data_O, 'data_O.csv', row.names=F)
 data_C <- write.csv2(data_C, 'data_C.csv', row.names = F)
